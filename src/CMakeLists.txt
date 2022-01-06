@@ -1,6 +1,5 @@
-add_executable(${PROJECT_NAME}
-  main.cpp
-  PatternGenerator.cpp
-)
+cmake_minimum_required(VERSION 3.16)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE Threads::Threads)
+add_subdirectory(libMstp)
+add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE libMstp)

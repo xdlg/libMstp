@@ -3,7 +3,7 @@
 #include <cstdint>
 #include <cstdlib>
 
-namespace mstpGeneratorLib
+namespace libMstp
 {
 
 class Scale
@@ -19,4 +19,4 @@ public:
   double _increment;
 };
 
-} // namespace mstpGeneratorLib
+} // namespace libMstp

@@ -7,7 +7,7 @@
 #include <random>
 #include <thread>
 
-namespace mstpGeneratorLib
+namespace libMstp
 {
 
 PatternGenerator::PatternGenerator(std::size_t width, std::size_t height)
@@ -151,4 +151,4 @@ void PatternGenerator::blurVertical(
   }
 }
 
-} // namespace mstpGeneratorLib
+} // namespace libMstp

@@ -1,5 +1,5 @@
-#include "PatternGenerator.hpp"
-#include "Scale.hpp"
+#include "libMstp/PatternGenerator.hpp"
+#include "libMstp/Scale.hpp"
 
 #include <cstdio>
 #include <cstdlib>
@@ -10,15 +10,15 @@
 
 void writeImage(std::size_t width, std::size_t height, const std::vector<double>& data);
 
-int main(int argc, char** argv)
+int main()
 {
   constexpr std::size_t width = 320;
   constexpr std::size_t height = 240;
 
-  mstpGeneratorLib::PatternGenerator generator(width, height);
-  generator._scales.push_back(mstpGeneratorLib::Scale(50, 100, 0.04));
-  generator._scales.push_back(mstpGeneratorLib::Scale(25, 50, 0.03));
-  generator._scales.push_back(mstpGeneratorLib::Scale(12, 25, 0.02));
+  libMstp::PatternGenerator generator(width, height);
+  generator._scales.push_back(libMstp::Scale(50, 100, 0.04));
+  generator._scales.push_back(libMstp::Scale(25, 50, 0.03));
+  generator._scales.push_back(libMstp::Scale(12, 25, 0.02));
 
   for (std::size_t i = 0; i < 100; i++) {
     std::cout << "Generating pattern " << std::to_string(i) << "..." << std::endl;

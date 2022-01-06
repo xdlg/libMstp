@@ -5,7 +5,7 @@
 #include <cstdlib>
 #include <vector>
 
-namespace mstpGeneratorLib
+namespace libMstp
 {
 
 class PatternGenerator
@@ -34,4 +34,4 @@ private:
     std::size_t radius, const std::vector<double>& source, std::vector<double>& destination) const;
 };
 
-} // namespace mstpGeneratorLib
+} // namespace libMstp
