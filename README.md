@@ -1,2 +1,2 @@
-Multi-Scale Turing Patterns Generator Library
+Multi-Scale Turing Patterns Library
 ===
