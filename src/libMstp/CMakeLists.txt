@@ -39,6 +39,7 @@ add_executable(
 
 target_link_libraries(
   ${TEST_PROJECT_NAME}
+  ${PROJECT_NAME}
   gtest_main
 )
 

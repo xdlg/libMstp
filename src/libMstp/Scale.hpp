@@ -6,9 +6,8 @@
 namespace libMstp
 {
 
-class Scale
+struct Scale
 {
-public:
   Scale(std::size_t activatorRadius, std::size_t inhibitorRadius, double increment)
     : _activatorRadius(activatorRadius), _inhibitorRadius(inhibitorRadius), _increment(increment)
   {

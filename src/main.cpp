@@ -17,8 +17,8 @@ void writeImage(std::size_t width, std::size_t height, const std::vector<double>
   std::ofstream ofs("out.ppm", std::ios_base::out | std::ios_base::binary);
   ofs << "P5" << std::endl << width << ' ' << height << std::endl << "255" << std::endl;
 
-  for (std::size_t i = 0; i < height * width; i++) {
-    ofs << static_cast<unsigned char>(data[i] * 255);
+  for (const double& value : data) {
+    ofs << static_cast<unsigned char>(value * 255);
   }
 
   ofs.close();
